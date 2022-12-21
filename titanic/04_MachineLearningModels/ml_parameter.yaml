@@ -1,7 +1,7 @@
 # Hyperparameter for Machine Learning Algorithms
 experiment_name: "Titanic"
 RANDOM_STATE: 42
-N_TRAILS: 50 # run for 50 runs
+N_TRAILS: 40 # run for xx runs
 TIMEOUT: 600 # run for max 10 minutes (if the last run at 9 minutes runs for 1h, the active run is not killed)
 
 path_df_train: "../03_DataPreprocessing/df_train_prepared_reduced.pkl"
@@ -10,7 +10,7 @@ path_df_test: "../03_DataPreprocessing/df_test_prepared_reduced.pkl"
 # SVC
 svm_kernel: ['linear', 'poly', 'rbf', 'sigmoid']
 svm_C: [1, 500]
-svm_degree: [1, 5, 1]
+svm_degree: [1, 3, 1]
 
 # Logistic Regression
 lr_C: [1, 500]
